@@ -1,0 +1,170 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main() {
+
+	string seq[5], freq[6];
+
+	seq[0] = "<AB(FG)CD>";
+	seq[1] = "<BGD>";
+	seq[2] = "<BFG(AB)>";
+	seq[3] = "<F(AB)CD>";
+	seq[4] = "<A(BC)GF(DE)>";
+
+	bool repeated;
+
+	int Acounter = 0, Bcounter = 0, Ccounter = 0, Dcounter = 0,
+		Ecounter = 0, Fcounter = 0, Gcounter = 0;
+
+	int minSup = 2,np=6;
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < seq[i].size(); j++) {
+
+			if (seq[i][j] == 'A') {
+
+				repeated = false;
+				for (int k = j + 1; k < seq[i].size(); k++) {
+					if (seq[i][j] == seq[i][k]) {
+						repeated = true;
+						break;
+					}
+				}
+				if (repeated == false) {
+					Acounter++;
+				}
+			}
+
+			if (seq[i][j] == 'B') {
+
+				repeated = false;
+				for (int k = j + 1; k < seq[i].size(); k++) {
+					if (seq[i][j] == seq[i][k]) {
+						repeated = true;
+						break;
+					}
+				}
+				if (repeated == false) {
+					Bcounter++;
+				}
+
+			}
+
+			if (seq[i][j] == 'C') {
+
+				repeated = false;
+				for (int k = j + 1; k < seq[i].size(); k++) {
+					if (seq[i][j] == seq[i][k]) {
+						repeated = true;
+						break;
+					}
+				}
+				if (repeated == false) {
+					Ccounter++;
+				}
+			}
+
+			if (seq[i][j] == 'D') {
+				repeated = false;
+				for (int k = j + 1; k < seq[i].size(); k++) {
+					if (seq[i][j] == seq[i][k]) {
+						repeated = true;
+						break;
+					}
+				}
+				if (repeated == false) {
+					Dcounter++;
+				}
+			}
+
+			if (seq[i][j] == 'E') {
+
+				repeated = false;
+				for (int k = j + 1; k < seq[i].size(); k++) {
+					if (seq[i][j] == seq[i][k]) {
+						repeated = true;
+						break;
+					}
+				}
+				if (repeated == false) {
+					Ecounter++;
+				}
+			}
+
+			if (seq[i][j] == 'F') {
+				repeated = false;
+				for (int k = j + 1; k < seq[i].size(); k++) {
+					if (seq[i][j] == seq[i][k]) {
+						repeated = true;
+						break;
+					}
+				}
+				if (repeated == false) {
+					Fcounter++;
+				}
+			}
+
+			if (seq[i][j] == 'G') {
+				repeated = false;
+				for (int k = j + 1; k < seq[i].size(); k++) {
+					if (seq[i][j] == seq[i][k]) {
+						repeated = true;
+						break;
+					}
+				}
+				if (repeated == false) {
+					Gcounter++;
+				}
+			}
+
+		}
+	}
+
+	cout << "Item                       Support Count" << endl;
+	cout << " A			          " << Acounter << endl; 
+	cout << " B				  " << Bcounter << endl; 
+	cout << " C				  " << Ccounter << endl; 
+	cout << " D				  " << Dcounter << endl; 
+	cout << " E				  " << Ecounter << endl; 
+	cout << " F				  " << Fcounter << endl; 
+	cout << " G				  " << Gcounter << endl; 
+
+	cout << "------------------------------------------------" << endl;
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	cout << "Item                       Support Count" << endl;
+	if (Acounter >= minSup) {cout << " A			          " << Acounter << endl; freq->append("A"); }
+	if (Bcounter >= minSup) {cout << " B				  " << Bcounter << endl; freq->append("B"); }
+	if (Ccounter >= minSup) {cout << " C				  " << Ccounter << endl; freq->append("C"); }
+	if (Dcounter >= minSup) {cout << " D				  " << Dcounter << endl; freq->append("D"); }
+	if (Ecounter >= minSup) {cout << " E				  " << Ecounter << endl; freq->append("E"); }
+	if (Fcounter >= minSup) {cout << " F				  " << Fcounter << endl; freq->append("F"); }
+	if (Gcounter >= minSup) {cout << " G				  " << Gcounter << endl; freq->append("G"); }
+
+	cout << "------------------------------------------------" << endl;
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+	
+	for (int k = 0; k < 1; k++) {
+		cout << "Item                       Support Count" << endl;
+		for (int h = 0; h < 6; h++) {
+			for (int p = 0; p < np; p++) {
+				cout <<" " << freq[k][h] << freq[k][p] << endl;
+			}
+			cout <<"------------------------------------------------" << endl;
+		}
+	}
+	
+	
+	
+
+
+
+
+	return 0;
+}
