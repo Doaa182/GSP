@@ -1,0 +1,22 @@
+﻿  Source.cpp
+C:\Users\ITECH\source\repos\GSP\Source.cpp(13,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(15,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(55,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(56,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(73,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(81,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(89,11): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(168,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(177,11): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(178,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(188,11): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(189,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(245,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(254,11): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(255,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(267,11): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(268,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(278,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(279,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ITECH\source\repos\GSP\Source.cpp(336,21): warning C4018: '<': signed/unsigned mismatch
+  GSP.vcxproj -> C:\Users\ITECH\source\repos\GSP\Debug\GSP.exe
